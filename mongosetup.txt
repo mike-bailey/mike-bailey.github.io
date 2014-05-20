@@ -1,0 +1,7 @@
+curl -O http://downloads.mongodb.org/linux/mongodb-linux-i686-2.6.1.tgz
+tar -zxvf mongodb-linux-i686-2.6.1.tgz
+mkdir -p mongodb
+cp -R -n mongodb-linux-i686-2.6.1/ mongodb
+export PATH=<mongodb-install-directory>:$PATH
+mkdir -p /data/db
+mongod
