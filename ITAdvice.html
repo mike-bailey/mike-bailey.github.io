@@ -1,0 +1,30 @@
+<html><head>
+
+<title>
+What I need to do to solve the problem?		
+</title>
+
+<script type="text/javascript">
+function giveAdvice() { 
+var easyphrases = ["Oh, easy! ","Doesn't seem hard at all... ","No problem at all! ","Easy! "];
+var noun = ["multiplexer array.","optimus node.","calabration multiplexor.","declaratory variable.","API indicator.","user agent.","raw parameters."];
+var verb = ["Telnet into","SSH into","Extrapolate","Notorize", "Send raw data];
+document.getElementById("answer").innerHTML= easyphrases[Math.floor(Math.random() * easyphrases.length)] + verb[Math.floor(Math.random() * verb.length)] + " into the " + noun[Math.floor(Math.random() * noun.length)]
+}
+</script>
+</head>
+<body>
+<center>Welcome, what do you need help with fixing?
+<br /><br />
+<input type="text" value="Problem here" size="100"> 
+<input type="button" value="Get Solution" onclick="javascript:giveAdvice()">
+<br /><br />
+
+<span id="answer"></span>
+
+
+
+
+
+
+</center>
