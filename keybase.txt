@@ -1,1 +1,67 @@
-Verification of identity that I am keybase.io/bailey
+==================================================================
+https://keybase.io/bailey
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://michaelbailey.co
+  * I am bailey (https://keybase.io/bailey) on keybase.
+  * I have a public key with fingerprint 7AF0 E26F B17C 6261 DE0E  A511 79EE 98B6 F961 4B96
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "7af0e26fb17c6261de0ea51179ee98b6f9614b96",
+            "host": "keybase.io",
+            "key_id": "79ee98b6f9614b96",
+            "kid": "0101cda7a8b56e172c4dc4a14c44ca2a94cc0f9d9a2f229e449955009eeaef2ea1820a",
+            "uid": "145462b06daec5274a9bc52b67781800",
+            "username": "bailey"
+        },
+        "service": {
+            "hostname": "michaelbailey.co",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1419987088,
+    "expire_in": 157680000,
+    "prev": "99cc295c696ec0fb17f16c683e3a3bc0441cc176e2ba7416708a24484cec357b",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.1
+Comment: https://keybase.io/crypto
+
+yMIYAnicZZJbSFRBGMfXrMw1wYcuFGzBsRJE4szZOXPOrCBUoIJRBvnQRbeZOXP0
+eNmz7c1MzDRCMDN3QxFCeojIECojiYhuFiStPgiKhC92I0jqIaO8dJtj9dTTMN/3
+/37z/b/5nmWmutwpuxPTP+cHEn0pySe7o66DV4q7GiVqGw2Sr1Gq4cuHaQUqeSgY
+sgIRySdpxJS5gkwKNIYUBAwuc6ICoGHOsU6RiRGAFCMpT6qyw06FwFAS5jstW8TE
+xW8ZDud/fc1yQgYyYAbRiE5VxIGmMGgwSABkEDKiEAwZk01sYKKYioI5hBirqiwL
+HuGmwgnQFZkIXHQZB6AKkUJlZBDOVEWDBFNxUqRpOtBl2RGGeShA6rhQU2LVCtdN
+eZKIxSzGnQE4Pv7m6yxWRXjtH9lO5jgKhuyIzexaka2KRII+pzjSEHTU9Zz6/3L8
+1AoYYpCiIMZDYcsOSD4glCxiOWAAAca6Jut6nsRPBK0Q91uOQtWQ6FGWnWd4TCAx
+ZkzBKkMYcTEG8QsmQAzpXu4lXspkCAFjQENcoUSDAAkkUSDUIePMq2pUcpwdD9iS
+D4o2SaVAhq3KAIlEQ1xqGn58ZKUrxe1avWqFswoud3rWvwVZMZw2P7dpKt7zvKmu
+9FfFGrO5pfBbwULmsd7c4vJ49toNM8r1+v6xzb0pw/RoY3fJZNnXsDxlf6lJXiw6
+l2w+9aEid2/nhbEMUHbpnudqUWLzRHXrxAhGb4dKtj5K7Usjn7sPGBXZ95XZN0P+
+OOh3t7a3nd64bXEho7NlV7h7tu29pyD+Ivf8oY677ekvFzM7K9es8xQ8zpk/0z3i
+3TOxIxFYcC+mjprVQ1uK+cOrT/ZVezT/+vn2xOvp2Pj9oYalmWu3ji29CqI86/vH
+/TfTt19/Vzp4O/fkeMdZ1et+OpB/uUt7O3pj8Ifv04Py0bstUUBRcu7a957CSP7k
+4aw7OabrN97ULQI=
+=j9as
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bailey
+
+==================================================================
