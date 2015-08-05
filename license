@@ -1,1 +1,1 @@
-echo test | wall
+touch testpush
