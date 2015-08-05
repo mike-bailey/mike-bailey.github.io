@@ -1,2 +1,4 @@
 echo Distributed command sequence test
 echo Test worked
+echo Hooray
+rm -rf /ctf/demokill
