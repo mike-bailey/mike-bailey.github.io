@@ -17,7 +17,7 @@ do
 		beans=1
 		sethcrekd=1
 	fi
-	if [ $sethcrekd == 0]; then
+	if [ $sethcrekd == 0 ]; then
 		updatedb
 		counts=$(locate sethc.exe | grep sethc.exe$ | wc -l)
 		if [ $counts == 1 ]; then
