@@ -36,10 +36,74 @@
 	</div>
 </nav>
 <div class="container-fluid">
+		<h2 style="text-align: center;">
+			AWS Projects
+		</h2><br>
+		<div style="padding-bottom: 3%; padding-left: 30%; padding-right: 30%; text-align: center;">
+		I'm relatively comfortable with a variety of Amazon Web Services, and it's one of my frequent selling points in both freelance and employment, so here I'll break down service by service what I've been up to.
+		</div>
+		<div class="row">
+		<div class="col-sm-12" style="text-align: center; font-weight: bold; font-size: 26px; padding-bottom: 10px;">
+		Forensic Collection Stack
+		</div>
+		</div>
+		<div class="row" style="padding-bottom: 10px; text-align: center;">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-1" style="max-width: 25%">
+				<img src="img/aws/ec2.png" style="max-width: 100%;  display: block; margin-left: auto; margin-right: auto;">EC2
+			</div>
+			<div class="col-sm-1" style="max-width: 25%">
+				<img src="img/aws/sqs.png" style="max-width: 100%; padding-bottom: 10%; display: block; margin-left: auto; margin-right: auto;" max-width="100%">
+				SQS 
+			</div>
+			<div class="col-sm-1" style="max-width: 25%">
+				<img src="img/aws/sns.png" style="max-width: 100%; padding-bottom: 10%; display: block; margin-left: auto; margin-right: auto;" max-width="100%">
+				SQS 
+			</div>
+			<div class="col-sm-1" style="max-width: 25%">
+				<img src="img/aws/s3.png" style="max-width: 93%; display: block; margin-left: auto; margin-right: auto;">S3
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-2" style="text-align: center;"></div>
+			<div class="col-sm-8" style="text-align: center;">
+				<p class="tab">Essentially Crypsaurus is a full forensic collection stack that, when registered with a client name, gives the consultant a Windows executable. It's incredibly similar to <a href="https://github.com/google/turbinia">Google Turbinia</a>, but generously predates it. When they run this executable, it transmits key data regarding the machine over an encrypted link using AWS SDK to S3. Once it lands in S3, it triggers an SNS notification, which triggers an SQS message and is then injested in "processors", effectively Docker containers sitting in EC2 that polls SQS for evidence and uploads analysis results. File conventions and configured prefixes ensure result data isn't processed as evidence data. All data is encrypted at rest. The full presentation I gave along with Paul at NovaHackers <a href="https://drive.google.com/file/d/0B9xl3zeYy9g5ZGhVZ1NISDd4b3c/view?usp=sharing">is available here</a>.</p> All of this is using the AWS Ruby v2 SDK. The stack predates v3.
+			</div>
+			<div class="col-sm-2" style="text-align: center;"></div>
+		</div>
+		<div class="row">
+		<div class="col-sm-12" style="padding-top: 3%; text-align: center; font-weight: bold; font-size: 26px;">
+		Slack Invites
+		</div>
+		</div>
+		<div class="row" style="padding-bottom: 10px; text-align: center;">
+			<div class="col-sm-5"></div>
+			<div class="col-sm-1" style="max-width: 25%">
+				<img src="img/aws/lambda.png" style="max-width: 100%;  display: block; margin-left: auto; margin-right: auto;">Lambda
+			</div>
+			<div class="col-sm-1" style="max-width: 25%">
+				<img src="img/aws/apig.png" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" max-width="100%">API Gateway
+			</div>
+			<div class="col-sm-5"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" style="text-align: center;">
+				<img src="img/aws/cloudwatch.png" style="max-width: 6%; display: block; margin-left: auto; margin-right: auto;" max-width="100%"><br>CloudWatch
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-sm-2" style="text-align: center;"></div>
+			<div class="col-sm-8" style="text-align: center;">
+				<p class="tab">A unique challenge we faced in starting our student organization at GMU was our funding was essentially just a series of limited AWS educational credits.This means we were limited quite aggressively in our cost solutions. I determined a serverless architecture would make the most sense with such a simple solution, so I developed an API endpoint in Python 2.7 that, provided a valid GMU ID (that is verified through another seperate call), invites their GMU email address into our student organization's Slack via my token.</p>
+			</div>
+			<div class="col-sm-2" style="text-align: center;"></div>
+		</div>
+		<br>
+		<br><br>
 	<div class="panel panel-default">
-		<!-- Default panel contents -->
 	<div class="panel-heading">Github Projects: <i>Some Repos out of date</i></div>
-	<!-- Table -->
 	<table class="table" style="text-align: left;">
 		<tr><th>Project Title</th><th>Description</th><th>Source</th></tr>
 		<tr><td>mike-bailey.github.io</td><td>Literally this website.</td><td><a href="https://github.com/mike-bailey/mike-bailey.github.io">Link</a></td></tr>
