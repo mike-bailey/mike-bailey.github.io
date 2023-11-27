@@ -17,6 +17,12 @@
   padding-left: 5px;
 }
 
+.org-name {
+  font-family: 'Courier New', monospace;
+  font-style: oblique;
+  font-size: 1.25em;
+}
+
 .company-name {
   font-family: 'Courier New', monospace;
   font-style: oblique;
