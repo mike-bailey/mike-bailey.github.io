@@ -416,7 +416,7 @@ a:focus {
   padding: 0;
   text-align: center;
   color: white;
-  background: url(../img/MichaelBaileyIVEstate.jpg) no-repeat center scroll;
+  background: url("https://cdn.michaelbailey.co/WeddingTiePic.jpg") no-repeat center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
