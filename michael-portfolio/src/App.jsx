@@ -88,7 +88,7 @@ const App = () => {
           
           <div className="w-32 h-32 md:w-48 md:h-48 shrink-0 rounded-xl overflow-hidden bg-stone-200 dark:bg-stone-800">
              {/* Replace this URL with your actual headshot */}
-             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Michael Bailey" className="w-full h-full object-cover filter grayscale contrast-75 brightness-90 hover:contrast-100 hover:brightness-100 transition-all duration-500" />
+             <img src="https://www.linkedin.com/in/cybermichael/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BI4W8ODguRv%2BW8LUGFz8hVQ%3D%3D" alt="Michael Bailey" className="w-full h-full object-cover filter grayscale contrast-75 brightness-90 hover:contrast-100 hover:brightness-100 transition-all duration-500" />
           </div>
         </section>
 
@@ -103,7 +103,7 @@ const App = () => {
             {/* Image 1: Nature */}
             <div className="md:col-span-2 relative h-64 md:h-72 rounded-xl overflow-hidden group bg-stone-200 dark:bg-stone-800">
               {/* Replace URL with a photo of you, your wife, or Boulder */}
-              <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=1200" alt="Boulder Flatirons" className="w-full h-full object-cover filter contrast-75 brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:contrast-100" />
+              <img src="img/us_mtn.jpg" alt="CO Hike" className="w-full h-full object-cover filter contrast-75 brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:contrast-100" />
               <div className="absolute bottom-4 left-4 bg-stone-100 dark:bg-stone-900 px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-2 text-stone-800 dark:text-stone-200">
                 <Mountain className="w-3 h-3" /> Nature & Wellness
               </div>
@@ -113,13 +113,13 @@ const App = () => {
                {/* Image 2: Milo */}
                <div className="relative flex-1 rounded-xl overflow-hidden group bg-stone-200 dark:bg-stone-800 min-h-[130px]">
                  {/* Replace URL with a photo of Milo */}
-                 <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600" alt="Milo the dog" className="w-full h-full object-cover filter contrast-75 brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:contrast-100" />
+                 <img src="img/milo.jpg" alt="Milo the dog" className="w-full h-full object-cover filter contrast-75 brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:contrast-100" />
                  <div className="absolute bottom-3 left-3 bg-stone-100 dark:bg-stone-900 px-2 py-1 rounded-md text-xs font-medium text-stone-800 dark:text-stone-200">Milo 🐕</div>
                </div>
                {/* Image 3: Music / Vibe */}
                <div className="relative flex-1 rounded-xl overflow-hidden group bg-stone-200 dark:bg-stone-800 min-h-[130px]">
                  {/* Replace URL with a photo of a bar/music venue you like */}
-                 <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=600" alt="Live Music" className="w-full h-full object-cover filter contrast-75 brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:contrast-100" />
+                 <img src="img/nashville.jpg" alt="Live Music" className="w-full h-full object-cover filter contrast-75 brightness-90 transition-all duration-700 group-hover:scale-105 group-hover:contrast-100" />
                  <div className="absolute bottom-3 left-3 bg-stone-100 dark:bg-stone-900 px-2 py-1 rounded-md text-xs font-medium flex items-center gap-2 text-stone-800 dark:text-stone-200">
                    <Music className="w-3 h-3" /> Local Venues
                  </div>
