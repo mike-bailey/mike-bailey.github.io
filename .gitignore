@@ -4,7 +4,7 @@
 
 *.pydevproject
 .project
-node_modules
+node_modules/
 .metadata
 bin/
 tmp/
