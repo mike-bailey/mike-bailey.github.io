@@ -88,7 +88,7 @@ const App = () => {
           
           <div className="w-32 h-32 md:w-48 md:h-48 shrink-0 rounded-xl overflow-hidden bg-stone-200 dark:bg-stone-800">
              {/* Replace this URL with your actual headshot */}
-             <img src="https://www.linkedin.com/in/cybermichael/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BI4W8ODguRv%2BW8LUGFz8hVQ%3D%3D" alt="Michael Bailey" className="w-full h-full object-cover filter grayscale contrast-75 brightness-90 hover:contrast-100 hover:brightness-100 transition-all duration-500" />
+             <img src="img/mike.jpg" alt="Michael Bailey" className="w-full h-full object-cover filter grayscale contrast-75 brightness-90 hover:contrast-100 hover:brightness-100 transition-all duration-500" />
           </div>
         </section>
 
