@@ -112,9 +112,9 @@ const App = () => {
           <div className="bg-[#302a24] border border-[#3d342b] rounded-xl p-6 md:p-8">
             <p className="text-[#b8a694] leading-relaxed">
               Beyond the code, I live in North Boulder, Colorado with my wife and our dog, Milo. 
-              We're in our late 20s and try to strike a balance between prioritizing wellness and nature, 
+              We're in our late 20s and try to strike a balance between prioritizing fun and nature, 
               and enjoying the local scene with bars and live music. I'm a strong advocate for taking <Train className="w-4 h-4 inline-block mx-1 -mt-1 text-[#8a7968]"/> public transit around town, 
-              though our 2024 Hyundai Tucson <Car className="w-4 h-4 inline-block mx-1 -mt-1 text-[#8a7968]"/> is always ready when the mountains call.
+              though our Tucson <Car className="w-4 h-4 inline-block mx-1 -mt-1 text-[#8a7968]"/> and my road bike is always ready when the mountains call.
             </p>
           </div>
         </section>
